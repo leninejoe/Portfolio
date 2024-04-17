@@ -118,7 +118,7 @@ function toggleTheme() {
 
       const Delements = document.querySelectorAll('#D_theme')
       Delements.forEach(element => {
-        element.style.color = '#d9d9d9';
+        element.style.color = '#555555';
       });
 
       const img_elements = document.querySelectorAll('.icon');
