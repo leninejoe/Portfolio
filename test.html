@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark/Light Theme Toggle</title>
+<style>
+body.dark-mode {
+background-color: #333;
+color: #fff;
+}
+</style>
+</head>
+<body>
+
+<button onclick="toggleTheme()">Toggle Theme</button>
+
+<script>
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle("dark-mode");
+
+    // Save the user's preference to local storage
+    const isDarkMode = body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDarkMode);
+}
+
+// Apply user's preference from local storage
+const isDarkMode = localStorage.getItem("darkMode") === "true";
+if (isDarkMode) {
+    document.body.classList.add("dark-mode");
+}
+</script>
+
+</body>
+</html>
