@@ -83,7 +83,9 @@
     left: 10%;
     transition: 0.5s;
   }
-
+  .i-dark_Desktop:hover{
+    cursor: pointer;
+  }
 
   /* HAMBURGER MENU */
 
@@ -97,6 +99,9 @@
     top: 6.5%;
     left: 8%;
     transition: 0.5s;
+  }
+  .i-dark_Hambuger:hover{
+    cursor: pointer;
   }
 
   .hamburger-menu {
